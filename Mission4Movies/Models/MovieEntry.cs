@@ -8,6 +8,7 @@ namespace Mission4Movies.Models
 {
     public class MovieEntry
     {
+        // Attributes to store about a movie
         [Key]
         [Required]
         public int movieId { get; set; }

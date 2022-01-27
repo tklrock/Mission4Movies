@@ -41,6 +41,7 @@ namespace Mission4Movies.Controllers
         [HttpPost]
         public IActionResult MovieForm(MovieEntry me)
         {
+            //If all the restrictions specified in the model are met, then save it. Otherwise, display the unmet specification.
             if (ModelState.IsValid)
             {
                 MovieEntryContext.Add(me);

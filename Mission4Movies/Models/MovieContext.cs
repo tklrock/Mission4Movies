@@ -17,6 +17,7 @@ namespace Mission4Movies.Models
 
         protected override void OnModelCreating(ModelBuilder mb)
         {
+            //Initial movie entires into the database
             mb.Entity<MovieEntry>().HasData(
                 new MovieEntry
                 {
